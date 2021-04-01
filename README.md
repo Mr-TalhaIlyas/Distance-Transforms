@@ -1,3 +1,4 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 <img alt="NumPy" src="https://img.shields.io/badge/numpy%20-%23013243.svg?&style=for-the-badge&logo=numpy&logoColor=white" />
 
 # Distance Transformations:
@@ -17,6 +18,15 @@ One way to think about the distance transform is to first imagine that foregroun
 * I used Python Language for implementing the distance transformations.
 * The filters I used for above transformations are as follows:
 
+### Usage
+```python
+img = cv2.imread('C:/Users/Talha/Desktop/dots2.png',0)
+# Metric is one of Euclidean, Chess_Board or City_Block
+transformed, img = dist_transformations(img = None, transformation_metric = 'City_Block') 
+plt.imshow(transformed)
+# to display contours
+plt.contour(transformed, colors='k', linestyles  = '-.')
+```
 ![alt text](https://github.com/Mr-TalhaIlyas/Distance-Transforms/blob/master/screens/img4.png)
 
 ## Results
