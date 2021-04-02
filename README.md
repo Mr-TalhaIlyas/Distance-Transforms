@@ -19,6 +19,7 @@ One way to think about the distance transform is to first imagine that foregroun
 * The filters I used for above transformations are as follows:
 
 ### Usage
+If image is `None` a random grayscale image will be generated with some random points as `ones` and rest will be all `zeros`.
 ```python
 img = cv2.imread('C:/Users/Talha/Desktop/dots2.png',0)
 # Metric is one of Euclidean, Chess_Board or City_Block
